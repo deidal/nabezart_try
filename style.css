@@ -1,0 +1,283 @@
+/* global styles */
+:root{
+    --main-font: 'Abril Fatface', cursive;
+    --secondary-font:  'Playfair Display', serif;
+    --cream-background: #FAFAFA; 
+    --dark-green: #2A3A2D; 
+}
+
+
+html{
+    border: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0 50px 0 50px;
+    background-color: #FAFAFA;
+}
+
+
+a{
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    /* display: flex; */
+    /* justify-content: end; */
+}
+
+section{
+    padding: 3.9rem ;
+    overflow: hidden;
+}
+
+
+.navbar{
+    position: sticky; 
+    top: 0; 
+    height: 70px; 
+}
+
+.nav-bar{
+    display: flex;
+    /* top: -10px; */
+    border: 1px solid red;
+    text-align: end;
+    align-content: flex-start;
+    justify-content: end;
+    justify-items: left;
+}
+
+.navbar-brand{
+    color: #E6DFCA;
+    font-size: 35px;
+    font-family: var(--main-font);
+}
+
+.nav-link{
+    color: #2A3A2D ;
+    font-size: 25px;
+    font-family: var(--secondary-font);
+}
+
+
+.image-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: center;
+    /* position: relative; */
+    padding-top: 10vh;
+}
+
+.art{
+    /* margin: auto; */
+    display: flex;
+    width: 25em;
+    height: 25em;    
+    margin: 1rem;
+}
+
+.art:hover{
+    box-shadow: 5px 5px 15px black;
+    transition: 1s;
+    cursor: pointer;
+    /* opacity: 70% ; */
+}
+
+
+.about{
+    width: 100%;
+    height: 90vh;
+    font-family: var(--secondary-font);
+    color: var(--dark-green);
+    display: inline-block;
+    /* margin-left: 150px; */
+}
+
+.name{
+    display: inline-block;
+    width: 50vw;
+}
+.about-title{
+    /* font-size: 2.5em; */
+    padding: 5rem;
+    margin-bottom: 50px;
+}
+
+
+.description{
+    display: inline-block;
+    width: 30vw;
+    padding-left: 10vw;
+    /* font-size: 1.5em; */
+}
+
+
+
+.contact{
+    margin: 20px;
+}
+
+
+
+.form{
+    /* height: 50vh; */
+    padding-top: 100px;
+    padding: 30px;
+    background-color: #AFAFAF;
+    opacity: 70%;
+
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+
+.contact{
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    width: 50vw;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.contact_h{
+    font-size: 3rem;
+}
+
+.contact_p{
+    font-size: 1.5rem;
+    margin-left: 1.5vw;
+}
+
+
+.submit-btn:hover{
+    box-shadow: 5px 5px black;
+    transition: .5s;
+}
+
+/* media queries */
+
+@media (max-width: 360px), (max-height: 640px){
+    .about-title{
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 750px), (max-height: 1024px) {
+    .image-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 375px), (max-height: 812px) {
+    .navbar{
+        width: 90%;
+        margin: 0;
+        margin-left: 8px;
+        padding: 0;
+        position: sticky;
+    }
+    .signature{
+        display: none;
+    }
+    .nav-contents{
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    .about{
+        margin-left: 0px; 
+    }
+    
+    .name{
+        width: 50vw;
+        margin-right: 50px;
+        font-size: 50px;
+    }
+    .about-title{
+        font-size: 80px;
+        padding: 0;
+        margin: 0 10px 0 10px;
+    }
+    .description{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        height: 100%; 
+        padding: 10px;
+        margin: 10px ;
+        
+    }
+
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right:0; 
+    height: 5vw;
+    background-color: #2A3A2D;
+}
+
+
+@media (max-width: 768px), (max-height: 10224px) {
+ 
+    .navbar{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo{
+        margin: 0;
+        font-size: 20px;
+        padding: 0;
+    }
+    .nav-contents{
+        margin-left: 5px;
+        font-size: 30px;
+    }
+    
+    img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about{
+        margin-left: 0;
+        margin: 0; 
+    }
+
+    .name{
+        width: 90vw;
+        font-size: 100px;
+        margin-left: 0;
+    }
+    .about-title{
+        font-size: 1.5em;
+        padding: 10px;
+        margin: 0 10px 0 10px;
+    }
+    .description{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70vw;
+        padding: 10px;
+        margin: 20px 20px 10px 20px;
+        font-size: 2em;
+        /* position: relative; */
+    }
+
+} 
