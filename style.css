@@ -16,7 +16,7 @@ html{
 
 body{
     padding: 0;
-    margin: 0 50px 0 50px;
+    /* margin: 0 50px 0 50px; */
     background-color: #FAFAFA;
 }
 
@@ -158,6 +158,77 @@ section{
     box-shadow: 5px 5px black;
     transition: .5s;
 }
+
+.contact{
+    margin: 20px;
+}
+
+
+#gform{
+    /* height: 50vh; */
+    padding-top: 100px;
+    padding: 30px;
+    background-color: #AFAFAF;
+    opacity: 70%;
+
+    margin: auto;
+    margin-top: 50px;
+}
+
+#sent{
+    font-size: 2rem;
+    transition: 2s;
+}
+
+.icon-envelope{
+    font-size: 2rem;
+    transition: 2s;
+    /* margin: 50px;
+    padding: 50px; */
+}
+
+#gform{
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    width: 70vw;
+    margin: 150px;
+    padding: 15px;
+    margin-top: 10vh;
+    text-align: center;
+    border-radius: 15px ;
+}
+
+.contact-me{
+    padding-top: .8em;
+    padding-bottom: .8em;
+    font-size: 3.2rem;
+}
+
+input{
+    border: none;
+    background-color: #AFAFAF;
+    border-bottom: 1px solid #2A3A2D;
+    margin-bottom: .8em;
+    }
+
+.contact_p{
+    font-size: 1.5rem;
+    margin-left: 1.5vw;
+}
+
+.submit{
+    background-color: #2A3A2D;
+    margin: 1em;
+    border-radius: 15px ;
+    padding: .5em;
+
+}
+.submit:hover{
+    box-shadow: 5px 5px black;
+    transition: .5s;
+}
+
+
 
 /* media queries */
 
